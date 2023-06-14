@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+html,body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+header{
+    height: 560px;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    background: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: #4c545d;
+    font-size: 45px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+h3{
+    color: #9fabb2;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 3;
+}
+
+img{
+    padding-bottom: 20px;
+}
+
+/* button{
+    display: inline-block;
+} */
+
+.header-content div{
+    padding-top: 30px;
+}
+
+.btn-cta{
+    padding: 15px;
+    color: #fff;
+    border-radius: 40px;
+    width: 250px;
+    font-size: 18px;
+    border: none;
+    margin-right: 15px;
+    cursor:grabbing;
+}
+
+.btn-cta:hover{
+    opacity: 0.7;
+}
+
+.btn-ios{
+    background: #26baa4;
+    box-shadow: 5px 5px 5px 1px #197a6c;
+}
+
+.btn-mac{
+    background: #6173ff;
+    box-shadow: 5px 5px 5px 1px #4a59c7;
+}
+
+
+/* Snippets section */
+
+.track-snippets-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.main-text{
+    color: #4c545d;
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.sub-text{
+    color: #9fabb2;
+    max-width: 700px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.sub-track{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.sub-track img{
+    margin-left: -80px;
+}
+
+.side-bar{
+    padding-left: 40px;
+}
+
+.search{
+    margin: 60px 0;
+}
+
+.sync{
+    margin: 60px 0;
+}
+
+h4{
+    color: #4c545d;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.side-text{
+    color: #9fabb2;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 380px;
+    letter-spacing: 1px;
+}
+
+/* Access section */
+
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.access img{
+    padding-top: 100px;
+}
+
+/* Workflow section */
+
+.workflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.workflow-options{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.workflow-options img{
+    height: 55px;
+}
+
+.tech-companies{
+    padding: 90px 0;
+}
+
+.tech-companies img{
+    padding: 45px;
+}
+
+.clipboard div:last-of-type{
+    padding-top: 50px;
+}
+
+/* footer */
+footer{
+    background: #eef1f3;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 20px;
+    padding: 30px 80px;
+
+}
+
+footer .footer-logo{
+    width: 70px;
+    height: 100%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+    
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #4c545d;
+    margin-top: 5px;
+}
+
+footer ul li a:hover{
+   color: #26baa4;
+}
+
+.socials{
+    justify-self: end;
+}
+
+.socials img{
+    padding-right: 20px;
+}
+
+/* .socials img:hover
+.socials img:focus{
+    color: #26baa4;
+} */
+
+@media(max-width: 375px){
+
+    .header-content{
+        padding-top: 120px; 
+    }
+
+    .btn-cta{
+        margin: 15px 0;
+    }
+
+    .track-snippets-content{
+        margin: 60px 20px;
+        text-align: center;
+    }
+
+    .sub-track{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .sub-track img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .side-bar{
+        padding: 0;
+    }
+
+    .access, .clipboard{
+        text-align: center;
+        margin: 60px 20px;
+    }
+
+    .access img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .workflow{
+        margin: 60px 20px;
+        text-align: center;
+    }
+
+    .workflow-options{
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-options-card{
+        margin: 10px 0;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer ul li{
+        display: block;
+        text-align: center;
+    }
+}
